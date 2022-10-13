@@ -1,3 +1,16 @@
+# horse-client-js
+
+NodeJS Client for Horse Messaging Server
+
+### Installation ###
+
+```
+npm i horse-client-js
+```
+
+### Sample Usage ###
+
+```js
 import { HorseClient } from './horse-client';
 
 let client = new HorseClient();
@@ -12,10 +25,4 @@ client.queue.subscribe('queue-name')
     });
 
 client.connect();
-
-client.onconnected.subscribe(() => {
-    client.queue.create('NodeQueue1', { type: 'round-robin', managerName: 'persistent' })
-        .subscribe(result => {
-            console.log('Queue Create Result is ' + result.code);
-        });
-});
+```

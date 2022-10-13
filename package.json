@@ -1,9 +1,10 @@
 {
   "name": "horse-client-js",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Client for Horse Messaging Server",
   "main": "dist/horse-client.js",
   "files": [
+    "README.md",
     "dist/horse-client.js"
   ],
   "scripts": {
